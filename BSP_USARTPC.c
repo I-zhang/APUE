@@ -57,7 +57,6 @@ void BSP_USARTPC_Initialization(void)
 	/* Enable USART */
 	USART_Cmd(USARTPC_USARTx, ENABLE);
 	
-	/* 解决第一个字节丢失问题 */
 	USART_ClearFlag(USARTPC_USARTx,USART_FLAG_TC);
 }
 
